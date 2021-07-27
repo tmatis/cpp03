@@ -6,7 +6,7 @@
 /*   By: tmatis <tmatis@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/24 11:22:38 by tmatis            #+#    #+#             */
-/*   Updated: 2021/07/26 21:09:34 by tmatis           ###   ########.fr       */
+/*   Updated: 2021/07/27 15:20:34 by tmatis           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	main(void)
 	std::cout << ct;
 	}
 	{
-	FragTrap	ct("Beloved ScavTrap");
+	FragTrap	ct("Beloved FragTrap");
 
 	std::cout << ct;
 	ct.highFiveGuys();
