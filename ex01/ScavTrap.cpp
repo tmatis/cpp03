@@ -69,6 +69,28 @@ void	ScavTrap::guardGate(void)
 				<< std::endl;
 }
 
+void	ScavTrap::setEnergy(void)
+{
+	this->_energy_points = 50;
+}
+
+void	ScavTrap::attack(const std::string &target)
+{
+	if (this->_energy_points > 0)
+	{
+		std::cout	<< "ScavTrap " << this->_name
+					<< " attacks " << target
+					<< ", causing " << this->_attack_damage
+					<< " points of damage!" << std::endl;
+		this->_energy_points--;
+	}
+	else
+	{
+		std::cout	<< "ScavTrap " << this->_name
+					<< " has no energy left to attack!" << std::endl;
+	}
+}
+
 /* ************************************************************************** */
 /*                                OUTTER FONCTIONS                            */
 /* ************************************************************************** */
